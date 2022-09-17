@@ -1,0 +1,13 @@
+{
+    "name": "Weather Extension",
+    "version": "0.0.1",
+    "description": "Get the real time weather data, air quality and local time of a specified city",
+    "manifest_version": 3,
+    "author": "Mounika Boini",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Know weather and air quality of a city",
+		"default_icon":"weather.png"
+    }
+	
+}
