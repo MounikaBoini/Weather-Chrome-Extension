@@ -7,7 +7,7 @@ function getWeather(){
   let air=document.querySelector(".msg");
   let time=document.querySelector(".time");
   let city=document.querySelector("#searchbar").value;
-  fetch(`http://api.weatherapi.com/v1/current.json?key=dc76910a37254cdc972133737221203&q=${city}&aqi=yes`)
+  fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=yes`)
   .then((data) => data.json())
   .then((apiResponse) => {
 	  console.log(apiResponse);
@@ -58,8 +58,3 @@ document.addEventListener('DOMContentLoaded', function() {
     var link = document.getElementById('searchbar');
 	document.getElementById("searchbar").onchange = function() {getWeather()};
 });
-
-
-/*function handleChange(){
-  getWeather();
-}*/
